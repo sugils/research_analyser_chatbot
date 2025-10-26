@@ -1,0 +1,9 @@
+Flask
+psycopg2-binary
+PyPDF2
+sentence-transformers
+numpy
+Werkzeug
+google-genai
+
+google-generativeai

@@ -1,0 +1,16 @@
+@startuml
+!theme plain
+
+entity "document_chunks" as document_chunks {
+    * chunk_id : uuid <<PK>> [default: uuid_generate_v4()]
+    --
+    doi : text
+    paragraph : text
+    page_no : integer
+    is_active : boolean [default: true]
+    created_at : timestamptz [default: now()]
+    modified_at : timestamptz [default: now()]
+    embedding_1024 : vector(1024)
+}
+
+@enduml
