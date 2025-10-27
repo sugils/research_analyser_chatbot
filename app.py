@@ -136,7 +136,7 @@ def chunk_text(text, chunk_size=300, overlap=50):
 
 # Step 7: Initialize Gemini AI client for generating responses
 try:
-    client = genai.Client(api_key='AIzaSyC8gb45MVdv6gAAmDYLAQ3iqmCCO2TVicE')
+    client = genai.Client(API_KEY)
     print("✅ Gemini AI client initialized successfully")
 except Exception as e:
     print(f"❌ Error initializing Gemini AI client: {str(e)}")
